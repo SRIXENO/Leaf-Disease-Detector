@@ -25,17 +25,20 @@ An AI-based web app for detecting plant leaf diseases with weather-based analysi
 ---
 # requirements.txt
 
-Flask==3.0.3
-tensorflow==2.15.0
-numpy==1.26.4
-opencv-python==4.9.0.80
-Pillow==10.2.0
-python-dotenv==1.0.1
-requests==2.31.0
-gunicorn==22.0.0
-werkzeug==3.0.3
+ - Flask==3.0.3 
+ - tensorflow==2.15.0
+ - numpy==1.26.4
+ - opencv-python==4.9.0.80
+ - Pillow==10.2.0
+ - python-dotenv==1.0.1
+ - requests==2.31.0
+ - gunicorn==22.0.0
+ - werkzeug==3.0.3
+
+---
 
 📷 Project Structure
+```
 AI-Leaf-Disease-Detector/
 │
 ├── static/
@@ -46,9 +49,12 @@ AI-Leaf-Disease-Detector/
 │   └── index.html
 │
 ├── model/
-│   └── model.h5
+│   └── leaf_cnn_model.h5
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
 └── .env
+```
+
+---
