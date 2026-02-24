@@ -1,10 +1,10 @@
-# AI-Leaf-Disease-Detector
+# Leaf-Disease-Detector
 An AI-based web app for detecting plant leaf diseases with weather-based analysis and bilingual voice support (English, Hindi &amp; Tamil).
 ---
 
 ## 🚀 Features
 
-- 🌱 **AI Disease Detection:** Upload a leaf image to identify diseases instantly.  
+- 🌱 **Disease Detection:** Upload a leaf image to identify diseases instantly.  
 - 🌤️ **Weather-Aware Risk:** Uses OpenWeather API to assess environmental risk levels.  
 - 🗣️ **Voice Assistant:** Reads remedies aloud (supports English & Tamil).  
 - 🧠 **Explainable AI:** Displays Grad-CAM visualization of infected regions.  
@@ -39,7 +39,7 @@ An AI-based web app for detecting plant leaf diseases with weather-based analysi
 
 📷 Project Structure
 ```
-AI-Leaf-Disease-Detector/
+Leaf-Disease-Detector/
 │
 ├── static/
 │   ├── style.css
