@@ -1,0 +1,10 @@
+pip install tensorflow
+pip install keras
+pip install numpy
+pip install opencv-python
+pip install fastapi uvicorn
+pip install pillow
+
+add variable after install python [  C:\Users\manoj\AppData\Roaming\Python\Python310\Scripts]
+
+pip install fastapi uvicorn jinja2 python-multipart

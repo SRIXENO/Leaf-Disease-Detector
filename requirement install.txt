@@ -1,0 +1,24 @@
+pip install tensorflow
+pip install keras
+pip install numpy
+pip install opencv-python
+pip install fastapi uvicorn
+pip install pillow
+
+add variable after install python [  C:\Users\manoj\AppData\Roaming\Python\Python310\Scripts]
+
+pip install fastapi uvicorn jinja2 python-multipart
+
+pip install python-dotenv
+[or]
+pip3 install python-dotenv
+
+
+pip install openai
+[or]
+pip3 install openai
+
+
+python Grad_cam_CNN.py test gradcam_outputs model.h5 conv2d_2
+
+python Grad_cam_CNN.py test gradcam_outputs model.h5 conv2d_2

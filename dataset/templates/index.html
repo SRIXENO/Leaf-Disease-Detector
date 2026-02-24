@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🌿 Smart Plant Doctor</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">🌱 Smart Plant Doctor</div>
+    <div class="header-actions">
+      <label class="lang-label">Language:
+        <select id="langSelect" aria-label="Language select">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="upload-panel card">
+      <h2>Upload leaf image</h2>
+      <form id="uploadForm" autocomplete="off">
+        <input id="fileInput" type="file" accept="image/*" required />
+        <div class="row">
+          <button type="submit" id="analyzeBtn" class="btn primary">🔍 Analyze</button>
+          <button type="button" id="resetBtn" class="btn">🔄 Reset</button>
+        </div>
+      </form>
+      <div id="previewWrap" class="preview-wrap" aria-hidden="true">
+        <img id="imagePreview" alt="uploaded preview" />
+      </div>
+    </section>
+
+    <section id="weatherWidget" class="weather-widget card small" aria-live="polite">
+      <div id="weatherContent">📍 Location: Unknown <br/> 🌤️ Weather: N/A</div>
+    </section>
+
+    <section id="result" class="result card" style="display:none;"></section>
+  </main>
+
+  <footer class="footer">
+    <small>© Smart Plant Doctor •</small>
+  </footer>
+  
+  <script>
+    window.ENV_OPENWEATHER_KEY = "{{ OPENWEATHER_KEY | default('') }}";
+  </script>
+
+  <script src="/static/script.js" defer></script>
+</body>
+</html>

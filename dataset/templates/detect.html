@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlantAI Pro - Detect</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script defer src="/static/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 PlantAI Pro</div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/detect">Detect</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/reports">Reports</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section class="detect-container">
+    <h1>Leaf Disease Detection</h1>
+    <p>Upload an image of a leaf and get instant diagnosis along with Grad-CAM heatmap visualization.</p>
+
+    <form id="uploadForm" class="upload-form">
+      <label for="fileInput" class="custom-file-label">Upload Leaf Image:</label>
+      <input type="file" id="fileInput" name="file" accept="image/*" required>
+      <button type="submit" class="btn btn-primary">Analyze</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </section>
+</main>
+
+  <footer>
+    <p>© 2025 PlantAI Pro. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlantAI Pro - Reports</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script defer src="/static/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 PlantAI Pro</div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/detect">Detect</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/reports">Reports</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Reports & Export</h1>
+    <p>
+      Review your past disease detection results and export them for record-keeping or sharing.
+    </p>
+
+    <section class="export-buttons">
+      <button class="btn btn-primary" onclick="exportReport('pdf')">Download as PDF</button>
+      <button class="btn btn-secondary" onclick="exportReport('csv')">Download as CSV</button>
+    </section>
+
+    <section id="reportPreview" class="report-preview hidden">
+      <h2>Recent Detection Results</h2>
+      <ul id="reportList" class="report-list">
+        <!-- Filled dynamically by JS -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PlantAI Pro. All rights reserved.</p>
+  </footer>
+</body>
+</html>
