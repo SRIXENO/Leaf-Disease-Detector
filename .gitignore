@@ -17,20 +17,12 @@ dataset/index bc 1/.env
 dataset/index bc 1/API.env
 dataset/index bc 2/.env
 dataset/index bc 2/API.env
-important text.txt
 
 # Large generated/runtime outputs
 dataset/gradcam_outputs/
-dataset/static/gradcam/
-dataset/static/uploads/
-dataset/static/reports/
 dataset/train/
 dataset/test/
-dataset/test_single/
-
-# Local backup variants
-dataset/index bc 1/
-dataset/index bc 2/
+dataset/valid/
 
 # Optional local installer
 python-3.10.8-amd64.exe

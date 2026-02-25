@@ -63,3 +63,11 @@ Leaf-Disease-Detector/
 ## Notes
 - `model.h5` is tracked with Git LFS.
 - Large generated folders are excluded from Git.
+
+## Disclaimer
+- The image dataset is not included in this repository.
+- The following folders are intentionally excluded from GitHub:
+  - `dataset/train/`
+  - `dataset/test/`
+  - `dataset/valid/`
+  - `dataset/gradcam_outputs/`
