@@ -1,0 +1,44 @@
+<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta charset="UTF-8"><meta name="format-detection" content="telephone=no"/><meta name="referrer" content="origin"/><link rel="shortcut icon" type="image/x-icon" href="static/imgs/bt-favicon.ico"><script src="static/js/base64.js"></script><script>/*
+        * browser detection based on browser features instead of user agent.
+        * https://dev.to/dailydevtips1/vanilla-javascript-browser-detection-43j4
+        */
+        function isIE() {
+            return /*@cc_on!@*/ false || !!document.documentMode;
+        }
+        function navigateToUnsupportedBrowserPage() {
+            var featureBranchName = getFeatureBranchName();
+            var browserPageUrl = '/gui/unsupported-browser.html';
+            var fullBrowserPageUrl = featureBranchName ? '/' + featureBranchName + browserPageUrl : browserPageUrl;
+
+            window.location.href = fullBrowserPageUrl;
+            return;
+        }
+        function getFeatureBranchName() {
+            var subStr = window.location.href.match(/.rainberrytv.com\/(.*)\/gui\/index.html/);
+            return subStr ? subStr[1] : '';
+        }
+
+        if (isIE()) {
+            navigateToUnsupportedBrowserPage();
+        }</script><script id="setup">// Google optimize
+        window.dataLayer = [];
+
+        // Set IS_UTWEB
+        window.isUtweb = function isUtweb() {
+            if (window.location.hostname.match('utweb') || window.location.port === '19575') {
+               return true;
+            }
+            return false;
+        };
+        var IS_UTWEB = window.isUtweb();
+
+        // Set window.isLocalhost object
+        Object.defineProperty(window, 'isLocalhost', {
+            writable: false,
+            value: !!(window.location.host.match('127.0.0.1') || window.location.host.match('localhost')),
+        });
+
+        // Set domain to rainberrytv.com
+        if (window.location.host.match('.rainberrytv.com')) {
+            document.domain = 'rainberrytv.com';
+        }</script></head><body><div id="app"></div><script src="static/js/start.js"></script></body></html>
